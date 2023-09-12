@@ -3,6 +3,8 @@
     margin: 0px;
     padding: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
 }
 
 body{
@@ -12,11 +14,11 @@ body{
 h1{
     font-size: 2rem;
     text-align: center;
-    padding-top: 5px;
+    padding-top: 6px;
 }
 
 h3{
-    font-size: small;
+    font-size: 0.9rem;
 }
 
 .send-right{
@@ -43,12 +45,12 @@ nav ul{
     align-items: center;
 }
 
-nav li{
+nav li.menu{
     background: #1465bb;
     padding: 7px;
-    height: 20px;
+    height: 35px;
     list-style: none;
-    margin-right: 25px;
+    margin-right: 18px;
     border-radius: 4px;
 }
 
@@ -67,11 +69,10 @@ nav li:hover{
     margin-top: 25px;
     margin-bottom: 25px;
     display: flex;
-    border-radius: 2px;
-    /* height: 500px; */
+    /* border-radius: 2px; */
 }
 
-#containerInt{
+#container #containerInt{
     flex-grow: 1;
     padding: 10px;
 }
@@ -91,13 +92,12 @@ nav li:hover{
     border-bottom: solid 2px #003785;
 }
 .relatedArticle{
-    width: 260px;
-    /* height: 150px; */
+    width: 280px;
     background: #b9ffff;
     margin: auto;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
     border-radius: 2px;
-    padding: 6px;
+    padding: 5px;
     transition: all .2s;
 }
 
@@ -108,10 +108,10 @@ nav li:hover{
 }
 
 .imagePrincipal{
-    width: 600px;
+    width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 80px;
+    /* margin-left: 80px; */
 }
 
 .navPost{
@@ -152,13 +152,63 @@ footer{
     justify-content: space-between;
 }
 
-section .contact{
+/* section .contact{
     margin-top: 10px;
 }
 
 section .logo{
     margin-top: 10px;
-}
+} */
 
 /* FOOTER */
 
+/* IPAD */
+@media (max-width: 769px){
+    #container{
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    #container aside{
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        background: #003785;
+    }
+    .relatedArticle{
+        width: 33%;
+        /* height: 210px; */
+    }
+    nav, footer{
+        width: 95%;
+    }
+    nav li.menu{
+        padding-bottom: 25px;
+    }
+}
+/* IPAD */
+
+/* MOVIL */
+@media (max-width: 380px){
+    ul{
+        max-width: 95%;
+        flex-wrap: wrap-reverse;
+    }
+    .logo{
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    nav li.menu{
+        margin-left: 6px;
+    }
+    footer{
+        padding-bottom: 0px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .relatedArticle{
+        width: 90%;
+    }
+}
+/* MOVIL */
