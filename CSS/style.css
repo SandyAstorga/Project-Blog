@@ -3,7 +3,7 @@
     margin: 0px;
     padding: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     box-sizing: border-box;
 }
 
@@ -12,12 +12,12 @@ body{
 }
 
 h1{
-    font-size: 2rem;
+    font-size: 1rem;
     text-align: center;
     padding-top: 6px;
 }
 
-h3, p{
+h3{
     font-size: 0.9rem;
 }
 
